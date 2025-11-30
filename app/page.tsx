@@ -242,7 +242,6 @@ export default function HomePage() {
                         <Phone className="contact-icon" />
                         <div>
                            <h3>Telefon</h3>
-                           <p>Tel: 0480-603 20</p>
                            <p>Mobil: 070-298 80 46</p>
                         </div>
                      </div>

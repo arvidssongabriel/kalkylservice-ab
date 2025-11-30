@@ -274,7 +274,7 @@ export default function HomePage() {
                            <h3>Karta</h3>
                            <p>
                               <a
-                                 href="https://maps.google.se"
+                                 href="https://www.google.se/maps/place/Emil+Spelares+v%C3%A4g+5,+395+97+L%C3%A4ckeby/@56.7822555,16.2984839,17z/data=!3m1!4b1!4m6!3m5!1s0x4657c515015b2373:0x7bb1ebe256340aed!8m2!3d56.7822526!4d16.3010588!16s%2Fg%2F11c43yy_q0?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
                                  target="_blank"
                                  rel="noreferrer"
                                  className="contact-link">

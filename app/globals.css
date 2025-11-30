@@ -51,9 +51,10 @@ body {
    margin: 0 auto;
    padding: 1rem 1.5rem;
    display: flex;
-   align-items: center;
-   justify-content: space-between;
-   gap: 1.5rem;
+   flex-direction: column; /* ⬅ var row innan */
+   align-items: center; /* ⬅ centrerar logo + knapp */
+   justify-content: center;
+   gap: 0.75rem;
 }
 
 .header-accent {
@@ -61,10 +62,8 @@ body {
    background: linear-gradient(90deg, var(--red-dark), #ff5252);
 }
 
-.logo-area {
-   display: flex;
-   flex-direction: column;
-   gap: 0.25rem;
+.header-contact-btn {
+   margin-top: 0.7rem;
 }
 
 .brand-pill {
@@ -83,7 +82,7 @@ body {
 }
 
 .site-title-main {
-   font-size: 2rem;
+   font-size: 3rem;
    font-style: italic;
    letter-spacing: 0.08em;
    text-transform: uppercase;
@@ -94,20 +93,22 @@ body {
    margin: 0;
 }
 
-.site-tagline-pill {
-   display: inline-block;
-   padding: 0.25rem 0.9rem;
-   border-radius: 999px;
-   border: 1px solid var(--red);
-   font-size: 0.9rem;
-   letter-spacing: 0.06em;
-   text-transform: uppercase;
-   color: var(--red-dark);
-   background: rgba(198, 40, 40, 0.05);
+.logo-area {
+   display: flex;
+   flex-direction: column;
+   gap: 0.25rem;
+   text-align: center; /* ⬅ lägg till */
+   align-items: center; /* ⬅ så knappen också centreras */
 }
 
-.header-cta {
-   flex-shrink: 0;
+.site-tagline-pill {
+   font-size: 1.5rem;
+   font-style: italic;
+   color: var(--red-dark);
+   padding: 0; /* ingen inre padding */
+   border: none; /* ingen border */
+   background: none; /* ingen bakgrund */
+   letter-spacing: 0.02em; /* lätt spacing, mer stilrent */
 }
 
 /* BUTTONS */

@@ -56,18 +56,21 @@ export default function HomePage() {
       <div className="app">
          {/* HEADER */}
          <header className="header">
-            <div className="header-inner">
+            <div className="header-inner header-inner-centered">
                <div className="logo-area">
                   <span className="brand-pill">Elkalkyler för företag</span>
                   <h1 className="site-title">
                      <span className="site-title-main">Kalkylservice AB</span>
                   </h1>
                   <p className="site-tagline">
-                     <span className="site-tagline-pill">Din elkalkylator</span>
+                     <span className="site-tagline-pill">&quot;Din elkalkylator&quot;</span>
                   </p>
-               </div>
-               <div className="header-cta">
-                  <button type="button" className="btn-primary" onClick={() => scrollToId("contact")}>
+
+                  {/* Kontakta oss-knappen nu centrerad under slogan */}
+                  <button
+                     type="button"
+                     className="btn-primary header-contact-btn"
+                     onClick={() => scrollToId("contact")}>
                      Kontakta oss
                   </button>
                </div>
@@ -92,9 +95,7 @@ export default function HomePage() {
                      </ul>
 
                      <div className="hero-actions">
-                        <button type="button" className="btn-primary" onClick={() => scrollToId("contact")}>
-                           Boka ett samtal
-                        </button>
+                        {/* BORT med "Boka ett samtal" – bara en knapp kvar */}
                         <button type="button" className="btn-primary" onClick={() => scrollToId("services")}>
                            Se vad vi räknar på
                         </button>
@@ -242,6 +243,7 @@ export default function HomePage() {
                         <Phone className="contact-icon" />
                         <div>
                            <h3>Telefon</h3>
+                           <p>Tel: 0480-603 20</p>
                            <p>Mobil: 070-298 80 46</p>
                         </div>
                      </div>
@@ -273,7 +275,7 @@ export default function HomePage() {
                            <h3>Karta</h3>
                            <p>
                               <a
-                                 href="https://www.google.se/maps/place/Emil+Spelares+v%C3%A4g+5,+395+97+L%C3%A4ckeby/@56.7822555,16.2984839,17z/data=!3m1!4b1!4m6!3m5!1s0x4657c515015b2373:0x7bb1ebe256340aed!8m2!3d56.7822526!4d16.3010588!16s%2Fg%2F11c43yy_q0?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+                                 href="https://maps.google.se"
                                  target="_blank"
                                  rel="noreferrer"
                                  className="contact-link">

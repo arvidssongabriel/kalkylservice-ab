@@ -95,7 +95,7 @@ export default function HomePage() {
                         <button type="button" className="btn-primary" onClick={() => scrollToId("contact")}>
                            Boka ett samtal
                         </button>
-                        <button type="button" className="btn-ghost" onClick={() => scrollToId("services")}>
+                        <button type="button" className="btn-primary" onClick={() => scrollToId("services")}>
                            Se vad vi räknar på
                         </button>
                      </div>

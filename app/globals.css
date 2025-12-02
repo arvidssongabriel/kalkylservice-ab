@@ -159,6 +159,65 @@ body {
    background: linear-gradient(140deg, rgba(198, 40, 40, 0.08), rgba(255, 255, 255, 1));
 }
 
+/* SOFTWARE SECTION */
+
+.software-grid {
+   margin-top: 2rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+   gap: 1.5rem;
+}
+
+.software-card {
+   background: #fff;
+   border-radius: var(--radius-lg);
+   padding: 1.6rem;
+   text-align: center;
+   box-shadow: var(--shadow-soft);
+   border: 1px solid var(--border-soft);
+   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.software-card:hover {
+   transform: translateY(-6px);
+   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+   border-color: rgba(198, 40, 40, 0.5);
+}
+
+.software-primary {
+   border: 2px solid var(--red-dark);
+   box-shadow: 0 18px 40px rgba(198, 40, 40, 0.2);
+}
+
+.software-logo {
+   margin-bottom: 1rem;
+   max-width: 100%;
+   height: auto;
+}
+
+/* PRIORITY BADGE */
+
+.priority-badge {
+   position: absolute;
+   top: 12px;
+   right: 12px;
+   background: var(--red-dark);
+   color: #fff;
+   padding: 0.25rem 0.65rem;
+   font-size: 0.7rem;
+   font-weight: 700;
+   border-radius: 6px;
+   letter-spacing: 0.08em;
+   text-transform: uppercase;
+   box-shadow: 0 4px 10px rgba(198, 40, 40, 0.45);
+   z-index: 5;
+}
+
+/* Gör att software-card kan ha absolut-positionerade element */
+.software-card {
+   position: relative; /* lägg till detta om det inte finns */
+}
+
 .section-wide,
 .section-narrow {
    max-width: 1120px;

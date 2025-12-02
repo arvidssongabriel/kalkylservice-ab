@@ -115,6 +115,54 @@ export default function HomePage() {
                </div>
             </FadeSection>
 
+            {/* PROGRAM / SOFTWARE SECTION */}
+            <FadeSection id="software">
+               <div className="section-narrow">
+                  <h2>Program vi arbetar med</h2>
+                  <p className="section-intro">
+                     Vi använder moderna kalkylverktyg för att leverera träffsäkra och tydliga elkalkyler. Wikells
+                     Elkalkyleringar är vårt primära verktyg – stabilt, välbeprövat och branschledande.
+                  </p>
+
+                  <div className="software-grid">
+                     {/* Wikells – PRIORITERAD */}
+                     <div className="software-card software-primary">
+                        <span className="priority-badge">PRIORITERAS</span>
+
+                        <Image
+                           src="/wk.jpg"
+                           alt="Wikells Elkalkyleringar"
+                           width={180}
+                           height={180}
+                           className="software-logo"
+                        />
+
+                        <h3>Wikells Elkalkyleringar</h3>
+                        <p>
+                           Vårt huvudverktyg för entreprenad- och produktionskalkyler. Branschstandard för
+                           elinstallationskalkyler.
+                        </p>
+                     </div>
+
+                     {/* Bidcon */}
+                     <div className="software-card">
+                        <Image
+                           src="/bidcon.png"
+                           alt="Bidcon Connect"
+                           width={180}
+                           height={180}
+                           className="software-logo"
+                        />
+                        <h3>Bidcon Connect</h3>
+                        <p>
+                           Används som stöd vid mängdning och kalkylering när projektet kräver särskilda
+                           integrationsmöjligheter.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </FadeSection>
+
             {/* USP / VARFÖR VI */}
             <FadeSection id="usp">
                <div className="section-narrow">
